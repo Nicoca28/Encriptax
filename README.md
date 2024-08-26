@@ -1,0 +1,1 @@
+Encriptax es un pequeño proyecto web que he creado para divertirme y aprender sobre encriptación de texto. Básicamente, puedes tomar cualquier texto que quieras, encriptarlo para que sea un enredo total y luego desencriptarlo para volver a la normalidad.
