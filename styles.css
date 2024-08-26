@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las columnas */
+    align-items: stretch; /* Alinea las columnas para que tengan la misma altura */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Modificar las propiedades de las columnas izquierda y derecha para que tengan el mismo tamaño */
+.left-column, .right-column {
+    flex: 1; /* Ambos tomarán el mismo tamaño */
+    max-width: 50%; /* Asegurar que ambos cuadros tengan el mismo ancho */
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho */
+    padding: 20px; /* Asegúrate de tener algo de espacio interno */
+    border-radius: 8px; /* Añadir un borde redondeado para estética */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añadir una sombra suave */
+    height: auto; /* Deja que la altura se ajuste automáticamente */
+}
+
+/* Columna izquierda */
+.left-column {
+    background-color: #f3e5f5; /* Un púrpura muy suave */
+}
+
+/* Columna derecha */
+.right-column {
+    background-color: #fff;
+    display: flex; /* Añadir flexbox para alinear la imagen */
+    justify-content: center; /* Centrar la imagen horizontalmente */
+    align-items: center; /* Centrar la imagen verticalmente */
+}
+
+/* Imagen por defecto */
+#default-image {
+    max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    max-height: 100%; /* Ajustar la imagen a la altura del contenedor */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor sin distorsionarla */
+}
+/* Estilo del campo de texto */
+textarea {
+    width: 100%; /* Ajustar al 100% del ancho del contenedor */
+    height: 150px; /* Aumentar la altura para mayor visibilidad */
+    margin-top: 20px;
+    padding: 15px; /* Incrementar el padding para un mejor espaciado */
+    border-radius: 8px; /* Mantener bordes redondeados */
+    border: 2px solid #ddd; /* Hacer el borde un poco más grueso para mayor visibilidad */
+    font-size: 18px; /* Aumentar el tamaño de la fuente para mejor legibilidad */
+    background-color: #fff; /* Asegurar que el fondo sea blanco para contraste */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Añadir una sombra ligera para efecto 3D */
+}
+
+/* Estilo del texto de información */
+.info-text {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    color: #666; /* Color gris para el texto */
+    margin-top: 10px; /* Espacio arriba del texto */
+    margin-bottom: 20px; /* Espacio debajo del texto para separar de los botones */
+    text-align: left; /* Alinear el texto a la izquierda */
+    font-family: Arial, sans-serif; /* Fuente similar a la imagen */
+}
+/* Estilo de los botones */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre botones */
+}
+
+/* Botón de Encriptar (Naranja) */
+#encrypt-button {
+    background-color: #ffa500; /* Naranja */
+    color: white;
+}
+
+/* Botón de Desencriptar (Verde) */
+#decrypt-button {
+    background-color: #4caf50; /* Verde */
+    color: white;
+}
